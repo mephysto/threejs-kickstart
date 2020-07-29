@@ -11,7 +11,7 @@
     "css-watch": "npm run css-compile && npm run css-compile -- -w",
     "serve": "browser-sync start --server 'dist' --cwd --files 'dist' --notify 'false'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently 'npm:copy' 'npm:compile' 'npm:css-watch' 'npm:serve'",
+    "dev": "concurrently 'npm:copy' 'npm:copyjs' 'npm:compile' 'npm:css-watch' 'npm:serve'",
     "devot": "concurrently \"npm:compile\""
   },
   "keywords": [],
