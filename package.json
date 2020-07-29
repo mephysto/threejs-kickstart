@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "webpack",
     "copy": "cpx 'src/**/*.{html,png,jpg}' dist --watch",
-    "copyjs": "cpx 'vendor/**/*.*' 'dist/vendor' --watch",
+    "copyjs": "cpx 'lib/**/*.*' 'dist/lib' --watch",
     "css-compile": "node-sass --output dist/css scss",
     "css-watch": "npm run css-compile && npm run css-compile -- -w",
     "serve": "browser-sync start --server 'dist' --cwd --files 'dist' --notify 'false'",
