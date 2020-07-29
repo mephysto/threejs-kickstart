@@ -1,0 +1,27 @@
+{
+  "name": "TotemPole3D",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "webpack",
+    "copy": "cpx 'src/**/*.{html,png,jpg}' dist --watch",
+    "copyjs": "cpx 'vendor/**/*.*' 'dist/vendor' --watch",
+    "styles": "node-sass --watch scss -o dist/css",
+    "serve": "browser-sync start --server 'dist' --cwd --files 'dist' --notify 'false'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently 'npm:copy' 'npm:compile' 'npm:styles' 'npm:serve'",
+    "devot": "concurrently \"npm:compile\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.2.0",
+    "cpx": "^1.5.0",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
