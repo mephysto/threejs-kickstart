@@ -53,7 +53,6 @@ function handleWindowResize() {
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
   renderer.setSize(width, height);
-  composer.setSize(width, height);
 }
 const init = () => {
   console.log("init");
